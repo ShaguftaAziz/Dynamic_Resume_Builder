@@ -1,0 +1,83 @@
+o{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Roboto", "Helvetica Neue";
+    background-color: blue;
+    color: azure;
+    padding: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form{
+    background-color: rgb(255, 0, 191);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rbgs(0,0,0,0.15);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    transition: transform 0.3s;
+
+}
+
+button{
+    background-color: black;
+    color: azure;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button :hover{
+    background-color: rgb(255, 187, 0);
+}
+
+#resumeOutput {
+    margin-top: 30px;
+    background-color: rgb(165, 42, 89);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    max-width: 500px;
+    width: 100%;
+}
+
+#resumeOutput h2 {
+    color: rgba(214, 226, 43, 0.041);
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#resumeOutput p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 15px;
+}
+
+#resumeOutput strong {
+    color: rgb(245, 240, 255);
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    right: -50px;
+    left: -50px;
+    background: linear-gradient(120dag , #fff, #ccc);
+    z-index: -1;
+    filter: blur(100px);
+}
